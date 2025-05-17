@@ -1,11 +1,11 @@
 using System;
-
 class Program
 {
     static void Main(string[] args)
     {
-        Resume myResume = new Resume("Christiana Nwachukwu");
-        
+        Resume myResume = new Resume();
+        myResume._name = "Christiana Nwachukwu";
+
         Job job1 = new Job();
         job1._jobTitle = "Health Education Teacher";
         job1._company = "F.C.G.C.S.School";
@@ -18,7 +18,6 @@ class Program
         job2._startYear = 2024;
         job2._endYear = 2026;
 
-    
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
 
